@@ -1,0 +1,252 @@
+/*
+Theme Name: Museomix MTL 2014
+Theme URI: http://museomixmtl.com
+Author: Sariha Chabert
+Author URI: http://sariha.com
+Description: Theme Bootstrap pour museoMix
+Version: 1.0
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700);
+@font-face
+{
+    font-family: museomixFont;
+    src: url('/museomix.ttf');
+}
+.mmixFont
+{
+    font-family: museomixFont;
+}
+
+body
+{
+   font-family: 'Dosis', sans-serif;
+}
+.header
+{
+
+}
+.site-name
+{
+
+}
+.highlight
+{
+    color: #3c7ef1;
+}
+.site-header,
+#footer
+{
+    background-color: #ffec00;
+    border-bottom: 5px solid #FFD941;
+}
+.page-header
+{
+    margin-bottom: 0;
+    border: none;
+}
+.img-header
+{
+    max-width: 100%;
+    height: auto;
+}
+#language-selector
+{
+    float: right;
+}
+div.dates img
+{
+    max-width: 100%;
+}
+div.dates
+{
+    float: right;
+    padding: 15px 0;
+}
+
+
+.navbar-default
+{
+    background-color: #ffec00;
+}
+
+
+h1 small
+{
+    font-weight: lighter;
+    color: #969696;
+}
+
+.content
+{
+    padding-top: 25px;
+}
+
+.post
+{
+    margin-bottom: 25px;
+    clear: both;
+}
+.more-link
+{
+    text-align: right;
+    display: block;
+    clear: both;
+}
+.tags a:link,
+.tags a:visited
+{
+    font-size: 12px;
+    font-weight: lighter;
+}
+.badge-tags{
+    background-color:#ffffff;
+    color: #1c1e22;
+    font-size: 8px;
+}
+.wp-post-image
+{
+    padding: 10px;
+}
+.entry img
+{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.postdate
+{
+    text-align: right;
+}
+
+.pagination-centered
+{
+    text-align: center;
+}
+
+/* gallery */
+div.gallery
+{
+    clear: both;
+}
+ul.gallery
+{
+    padding: 0;
+}
+.gallery-item
+{
+    list-style: none;
+}
+.img-thumbnail
+{
+    background-color: transparent;
+    padding: 0;
+    margin: 4px;
+}
+
+/* posts */
+blockquote
+{
+    border-left: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+/* menu */
+#menu
+{
+
+}
+#menu ul
+{
+    list-style: none;
+    border: solid 1px #969696;
+    padding: 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#menu ul li:last-child
+{
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#menu ul li:first-child
+{
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#menu ul li a
+{
+    display: block;
+    padding: 1px 10px;
+}
+
+#menu li.current_page_item a
+{
+    color: #ffffff;
+}
+#menu li.current_page_item
+{
+    background-color: #428bca;
+}
+#menu-small
+{
+    text-align: right;
+}
+#menu-small .dropdown-menu
+{
+    text-align: left;
+}
+
+/* tweet feed */
+li.widget,
+div.twiget-feed ul li
+{
+    list-style: none;
+}
+ul.tweet-wrap
+{
+    padding: 0;
+}
+
+/* fancybox */
+.fancybox-opened
+.fancybox-skin
+{
+    box-shadow : none;
+    -moz-box-shadow: none;
+    background:none;
+}
+.fancybox-skin
+{
+    background:none;
+}
+
+/* footer */
+#footer
+{
+    padding: 15px 0;
+    text-align: center;
+}
+#footer ul li
+{
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+}
+#footer ul li a:hover
+{
+    text-decoration: none;
+}
