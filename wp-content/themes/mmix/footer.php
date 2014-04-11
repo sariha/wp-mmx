@@ -1,8 +1,4 @@
 
-
-
-
-
 <footer id="footer" class="site-footer">
 
   <div class="container">
@@ -26,7 +22,7 @@
         </li>
         <li>
           <a href="http://museoquoi.tumblr.com/">
-            <span class="fa fa-tumblr-square fa-2x"></span> <?php echo trad('édition QC 2013', 'tumblr QC 2013'); ?>
+            <span class="fa fa-tumblr-square fa-2x"></span> <?php echo __('[fr]édition QC 2013[/fr][en]tumblr QC 2013[/en]'); ?>
           </a>
         </li>
       </ul>

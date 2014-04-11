@@ -250,3 +250,13 @@ ul.tweet-wrap
 {
     text-decoration: none;
 }
+.navbar,
+.navbar-default .navbar-collapse, .navbar-default .navbar-form
+{
+    background-color: transparent;
+    background-image: url("img/transparent_background_80_white.png");
+}
+#mmix-logo
+{
+
+}

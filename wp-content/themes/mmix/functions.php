@@ -3,6 +3,8 @@
 require_once('inc/wp_bootstrap_navwalker.php');
 require_once('inc/gallery-shortcode.php');
 
+//loads settings
+require_once('inc/settings/admin-init.php');
 
 function theme_setup()
 {
@@ -10,6 +12,9 @@ function theme_setup()
   add_theme_support( 'post-thumbnails' );
   add_image_size( 'dty-full-width', 750, 99999999, false );
   add_image_size( 'thumb-gallery', 200, 120, false );
+
+  //hide admin bar for everyone..
+  add_filter('show_admin_bar', '__return_false');
 }
 add_action( 'after_setup_theme', 'theme_setup' );
 
@@ -159,3 +164,4 @@ function wpml_show_en($atts, $content = null)
 add_shortcode('en', 'wpml_show_en');
 
 add_filter('widget_text', 'do_shortcode');
+add_filter('gettext', 'do_shortcode');
