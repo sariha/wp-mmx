@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content container">
+<div class="content container-fluid" id="front-page">
   <div class="row">
     <div class="">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

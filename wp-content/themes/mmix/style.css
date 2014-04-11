@@ -37,8 +37,7 @@ body
 .site-header,
 #footer
 {
-    background-color: #ffec00;
-    border-bottom: 5px solid #FFD941;
+
 }
 .page-header
 {
@@ -258,5 +257,11 @@ ul.tweet-wrap
 }
 #mmix-logo
 {
-
+    height: 60px;
+    padding: 15px 20px;
+}
+#front-page,
+#single-post
+{
+   padding-top: 60px;
 }
