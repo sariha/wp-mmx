@@ -144,16 +144,18 @@ function icl_language_switcher()
   echo $output;
 }
 
-//trads
-function trad($fr, $en = null)
+//special shortcodes for languages..
+function wpml_show_fr($atts, $content = null)
 {
-  if(!empty($en))
-  {
-    if(ICL_LANGUAGE_CODE == 'en')
-    {
-      return $en;
-    }
-    return $fr;
-  }
-  return $fr;
+  if(ICL_LANGUAGE_CODE == 'fr')
+    return do_shortcode($content);
 }
+add_shortcode('fr', 'wpml_show_fr');
+function wpml_show_en($atts, $content = null)
+{
+  if(ICL_LANGUAGE_CODE == 'en')
+    return do_shortcode($content);
+}
+add_shortcode('en', 'wpml_show_en');
+
+add_filter('widget_text', 'do_shortcode');

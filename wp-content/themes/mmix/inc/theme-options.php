@@ -6,8 +6,6 @@ For full documentation, please visit: https://github.com/ReduxFramework/ReduxFra
 
 if (!class_exists("sc_theme_options")) {
 
-
-
   class sc_theme_options {
 
     public $args = array();
