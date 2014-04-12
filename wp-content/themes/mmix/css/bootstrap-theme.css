@@ -95,13 +95,10 @@ input[type=submit],input[type=button], button, .woocommerce .button, li.load-mor
 .post-navigation .nav-next p,
 .post-navigation .nav-previous p,
 .btn-primary {
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#428bca), to(#3071a9));
-  background-image: -webkit-linear-gradient(top, #428bca, 0%, #3071a9, 100%);
-  background-image: -moz-linear-gradient(top, #428bca 0%, #3071a9 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #3071a9 100%);
-  background-repeat: repeat-x;
-  border-color: #2d6ca2;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3071a9', GradientType=0);
+
+    background-color: #4FA9F5;
+    background-image: none;
+    border-color: #52B0FF;
 }
 
 input[type=submit],input[type=button]:active, button:active, .woocommerce .button:active, li.load-more a:active, 

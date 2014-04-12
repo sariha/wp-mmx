@@ -41,6 +41,11 @@
               <h2 class="banner-title"><?php echo $page->post_title; ?></h2>
             <?php endif; ?>
             <?php echo do_shortcode($page->post_content) ?>
+            <?php
+              $pageTpl = get_page_template_slug( $page->ID );
+              locate_template($pageTpl, true);
+            ?>
+
           </div>
 
         </div>

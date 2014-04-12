@@ -302,3 +302,36 @@ ul.tweet-wrap
     margin-left: 25px;
     position: absolute;
 }
+
+.join-panels
+{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    background-color: #F2F2F2;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+div.join-header
+{
+    height: 200px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+div.join-header img
+{
+    vertical-align: middle;
+}
+
+.join-text
+{
+    color: #000000;
+    font-size: 22px;
+    min-height: 120px;
+}
