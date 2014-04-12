@@ -7,4 +7,10 @@ jQuery(document).ready(function($) {
         loop : false
     });
 
+
+    //window height
+    var vh = $( window ).height();
+    $('.sub_page_container').css('min-height', vh);
+    $('.sub_page_content').css('min-height', vh);
+
 });

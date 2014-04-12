@@ -10,8 +10,9 @@ function theme_setup()
 {
   register_nav_menu( 'primary', 'Menu principal' );
   add_theme_support( 'post-thumbnails' );
-  add_image_size( 'dty-full-width', 750, 99999999, false );
-  add_image_size( 'thumb-gallery', 200, 120, false );
+
+  //add image size
+  add_image_size( 'big-banner', 1200, 290, true );
 
   //hide admin bar for everyone..
   add_filter('show_admin_bar', '__return_false');
@@ -129,12 +130,21 @@ function themeit_tiny_mce_before_init( $settings ) {
   $style_formats = array(
     //add styles here...
     array( 'title' => 'Museomix Font', 'inline'=> 'span', 'classes' => 'mmixFont' ),
+    array( 'title' => 'Roboto Font', 'inline'=> 'span', 'classes' => 'robotoFont' ),
+    array( 'title' => 'Roboto Condensed Font', 'inline'=> 'span', 'classes' => 'robotoCondensedFont' ),
 
   );
   $settings['style_formats'] = json_encode( $style_formats );
   return $settings;
 }
 add_filter( 'tiny_mce_before_init', 'themeit_tiny_mce_before_init' );
+
+function my_theme_add_editor_styles() {
+  add_editor_style( 'style-editor.css' );
+}
+add_action( 'init', 'my_theme_add_editor_styles' );
+
+
 
 //language switcher
 function icl_language_switcher()
@@ -165,3 +175,5 @@ add_shortcode('en', 'wpml_show_en');
 
 add_filter('widget_text', 'do_shortcode');
 add_filter('gettext', 'do_shortcode');
+
+/*  */

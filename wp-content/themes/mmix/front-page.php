@@ -2,39 +2,54 @@
 
 <div class="content container-fluid" id="front-page">
   <div class="row">
-    <div class="">
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <div class="post" id="post-<?php the_ID(); ?>">
-            <?php edit_post_link('<span class="glyphicon glyphicon-pencil"></span>','<span style="float: right">', '</span>'); ?>
 
-          <?php if ( has_post_thumbnail() ): ?>
-          <div style="float: left;">
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_post_thumbnail('medium', array('class' => 'align-left')); ?></a>
 
+
+      <?php
+
+      $args = array(
+        'order'=> 'ASC',
+        'post_parent' => $post->ID,
+        'post_type' => 'page'
+      );
+      $sub_pages = get_children($args); $i=0;?>
+      <?php foreach( $sub_pages as $page ) :
+        $i++; ?>
+
+        <?php
+        if($i == 1) {
+          $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($page->ID), 'full' );
+          $url = $thumb['0'];
+          $style= 'style="background: url('.$url.');background-size: cover;background-position: 50% 50%;"';
+        }
+        else
+        {
+          $style = '';
+          if(has_post_thumbnail($page->ID))
+            $banner = get_the_post_thumbnail( $page->ID, 'big-banner');
+          else
+            $banner = null;
+
+        }
+        ?>
+        <div class="sub_page_container" id="spage_<?php echo $page->ID; ?>" <?php echo $style ?>>
+
+
+          <div class="sub_page_content">
+            <?php if(!empty($banner)) : ?>
+              <?php echo $banner; ?>
+              <h2 class="banner-title"><?php echo $page->post_title; ?></h2>
+            <?php endif; ?>
+            <?php echo do_shortcode($page->post_content) ?>
           </div>
-          <?php endif; ?>
 
-          <div class="entry">
-            <?php the_content('<span class="fa fa-arrow-circle-right fa-3x"></span>'); ?>
-          </div>
+        </div>
 
-       </div>
+      <?php endforeach; ?>
 
-
-
-<?php endwhile; else: ?>
-
-  <p>Oups !</p>
-
-<?php endif; ?>
     </div>
-    <div class="col-md-4">
-      <?php get_sidebar(); ?>
-    </div>
-  </div>
 
-  <div class="pagination-centered">
-    <?php show_pagination_links(); ?>
+
   </div>
 
 </div>

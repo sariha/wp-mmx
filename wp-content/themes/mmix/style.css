@@ -8,6 +8,8 @@ Version: 1.0
 */
 
 @import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700);
+
 @font-face
 {
     font-family: museomixFont;
@@ -17,10 +19,22 @@ Version: 1.0
 {
     font-family: museomixFont;
 }
-
+.robotoFont
+{
+    font-family: "Roboto";
+}
+.robotoCondensedFont
+{
+    font-family: "Roboto Condensed";
+}
 body
 {
    font-family: 'Dosis', sans-serif;
+    color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+    color: #FFFFFF;
 }
 .header
 {
@@ -53,10 +67,7 @@ body
 {
     float: right;
 }
-div.dates img
-{
-    max-width: 100%;
-}
+
 div.dates
 {
     float: right;
@@ -136,6 +147,13 @@ ul.gallery
 .gallery-item
 {
     list-style: none;
+}
+.attachment-big-banner
+{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
 }
 .img-thumbnail
 {
@@ -253,7 +271,12 @@ ul.tweet-wrap
 .navbar-default .navbar-collapse, .navbar-default .navbar-form
 {
     background-color: transparent;
-    background-image: url("img/transparent_background_80_white.png");
+    background-image: none;
+
+}
+#main-nav
+{
+    background: url("img/transparent_background_80_white.png") repeat;
 }
 #mmix-logo
 {
@@ -263,5 +286,19 @@ ul.tweet-wrap
 #front-page,
 #single-post
 {
-   padding-top: 60px;
+   padding-top: 0px;
+}
+
+.sub_page_content
+{
+    /* padding-top: 25%; */
+}
+.banner-title
+{
+    display: inline-block;
+    background-color: #4FA9F5;
+    padding: 12px;
+    margin-top: -100px;
+    margin-left: 25px;
+    position: absolute;
 }

@@ -29,7 +29,7 @@
 
 <div class="container-fluid site-header">
     <div class="container">
-      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="main-nav">
 
         <a href="/" title="<?php bloginfo('name'); ?>" class="navbar-brand" id="mmix-logo">
           <img src="<?php echo get_template_directory_uri(); ?>/img/logo_museomix_MTL.png" alt="Museomix Montréal"/>
