@@ -30,7 +30,7 @@ Version: 1.0
 body
 {
    font-family: 'Dosis', sans-serif;
-    color: #ffffff;
+    /* color: #ffffff; */
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
 {
@@ -334,4 +334,34 @@ div.join-header img
     color: #000000;
     font-size: 22px;
     min-height: 120px;
+}
+
+
+.user-panel
+{
+    text-align: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    background-color: #F2F2F2;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+.user-avatar img
+{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 0 #fff;
+}
+
+.alt-title
+{
+    color: #000000;
 }
