@@ -145,8 +145,6 @@ function my_theme_add_editor_styles() {
 }
 add_action( 'init', 'my_theme_add_editor_styles' );
 
-
-
 //language switcher
 function icl_language_switcher()
 {

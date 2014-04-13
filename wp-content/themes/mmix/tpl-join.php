@@ -15,7 +15,11 @@
         <img src="<?php echo get_template_directory_uri() ?>/img/pict-bird.png" alt=""/>
       </div>
       <p class="join-text robotoFont">
-        Want to know what we’re up to? Join our newsletter
+        <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
+          Want to know what we’re up to? Join our newsletter
+        <?php else : ?>
+          Vous voulez savoir ou nous en sommes ? Inscrivez-vous à notre infolettre
+        <?php endif; ?>
       </p>
       <div>
 
@@ -45,9 +49,14 @@
         <img src="<?php echo get_template_directory_uri() ?>/img/pict-human.png" alt=""/>
       </div>
       <p class="join-text robotoFont">
-        Want to participate?
-        get notified when we open
-        up registration !
+        <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
+          Want to participate?
+          get notified when we open
+          up registration !
+        <?php else : ?>
+          Vous voulez participer ?
+          Recevez une notification quand nous ouvrons les inscription !
+        <?php endif; ?>
       </p>
       <div>
 
@@ -80,13 +89,27 @@
         <img src="<?php echo get_template_directory_uri() ?>/img/pict-heart.png" alt=""/>
       </div>
       <p class="join-text robotoFont">
-        Want to join our team of beneLOVEs? write us a few words..
+
+        <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
+          Want to join our team of beneLOVEs? write us a few words..
+        <?php else : ?>
+         Vous voulez rejoindre notre équipe de beneLOVEs ?
+          écrivez-nous quelques mots...
+        <?php endif; ?>
+
       </p>
       <div>
+        <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
+          <a href="<?php echo site_url().'/en/contact-us/'; ?>" class="btn btn-primary">
+            Hi there, lovely...
+          </a>
+        <?php else : ?>
+          <a href="<?php echo site_url().'/contactez-nous/'; ?>" class="btn btn-primary">
+            ... par ici !
+          </a>
+        <?php endif; ?>
 
-        <a href="#" class="btn btn-primary">
-          Hi there, lovely...
-        </a>
+
 
       </div>
     </div>
