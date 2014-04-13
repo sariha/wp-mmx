@@ -367,6 +367,7 @@ div.join-header img
     background-color: #F2F2F2;
     text-align: center;
     padding: 10px 25px;
+    min-height: 280px;
 }
 .user-panel h3
 {
