@@ -193,3 +193,7 @@ function user_meta_field_config_function( $field, $fieldID, $formName ){
 
   return $field;
 }
+
+
+///
+add_filter('widget_text', 'do_shortcode');
