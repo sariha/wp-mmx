@@ -46,7 +46,6 @@ class qqUploadedFileXhr {
      * @return boolean TRUE on success
      */
     function save( $path ) {
-        var_dump($path);
         $input = fopen( "php://input", "r" );
         $temp = tmpfile();
         $realSize = stream_copy_to_stream( $input, $temp );
