@@ -29,10 +29,10 @@
             <?php echo get_avatar( $user->ID, 180 ); ?>
           </div>
           <h3><?php echo $metas['first_name']; ?> <?php echo $metas['last_name']; ?></h3>
-          <?php if(!empty($metas['twitter'])): ?>
+          <?php if(!empty($metas['twitter_account'])): ?>
           <div class="twitter-account">
-            <a href="http://www.twitter.com/<?php echo $metas['twitter']; ?>" target="_blank">
-              <i class="fa fa-twitter"></i> <?php echo $metas['twitter']; ?>
+            <a href="http://www.twitter.com/<?php echo $metas['twitter_account']; ?>" target="_blank">
+              <i class="fa fa-twitter"></i> <?php echo $metas['twitter_account']; ?>
             </a>
           </div>
           <?php endif; ?>
