@@ -48,7 +48,7 @@
       <ul class="nav navbar-nav" id="main-nav-bar">
         <?php foreach($sub_pages as $page): ?>
           <li class="">
-            <a href="<?php echo $post_url; ?>#spage_<?php echo $page->ID; ?>"><?php echo $page->post_title; ?></a>
+            <a href="<?php echo $post_url; ?>#spage_<?php echo $page->ID; ?>" data-target="#spage_<?php echo $page->ID; ?>"><?php echo $page->post_title; ?></a>
           </li>
         <?php endforeach; ?>
       </ul>

@@ -315,6 +315,13 @@ ul.tweet-wrap
     margin-left: 25px;
     position: absolute;
 }
+.alt-title
+{
+    display: inline-block;
+    background-color: #4FA9F5;
+    padding: 12px;
+    size : 15px;
+}
 
 .join-panels
 {
@@ -361,6 +368,10 @@ div.join-header img
     text-align: center;
     padding: 10px 25px;
 }
+.user-panel h3
+{
+    color: #4FA9F5;
+}
 
 .user-avatar img
 {
@@ -374,7 +385,3 @@ div.join-header img
     box-shadow: 0 1px 0 #fff;
 }
 
-.alt-title
-{
-    color: #000000;
-}
