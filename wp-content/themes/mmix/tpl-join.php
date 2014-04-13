@@ -19,11 +19,17 @@
       </p>
       <div>
 
-        <form action="#">
+        <form action="http://museomixmtl.us3.list-manage.com/subscribe/post?u=031aada7dda3a38c6ea1cb5c7&id=ce1f00ce80" target="_blank" method="post">
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_031aada7dda3a38c6ea1cb5c7_ce1f00ce80" value=""></div>
+
+          <!-- auto select language -->
+          <input type="hidden" name="group[6605]" value="<?php echo (ICL_LANGUAGE_CODE == 'en') ? '32' : '16' ; ?>"/>
+
           <div class="input-group">
-            <input type="text" class="form-control" name="email" placeholder="email">
+            <input type="text" class="form-control" name="EMAIL" placeholder="email">
             <span class="input-group-btn">
-              <button class="btn btn-primary" type="button"><i class="fa fa-arrow-right"></i></button>
+              <button class="btn btn-primary" type="submit"><i class="fa fa-arrow-right"></i></button>
             </span>
           </div><!-- /input-group -->
         </form>
@@ -44,17 +50,23 @@
         up registration !
       </p>
       <div>
-        <form action="#">
 
-          <form action="#">
-            <div class="input-group">
-              <input type="text" class="form-control" name="email" placeholder="email">
+        <form action="http://museomixmtl.us3.list-manage.com/subscribe/post?u=031aada7dda3a38c6ea1cb5c7&id=ce1f00ce80" target="_blank" method="post">
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_031aada7dda3a38c6ea1cb5c7_ce1f00ce80" value=""></div>
+
+          <!-- auto select language -->
+          <input type="hidden" name="group[6605]" value="<?php echo (ICL_LANGUAGE_CODE == 'en') ? '32' : '16' ; ?>"/>
+
+          <!-- interested in participation -->
+          <input type="hidden" name="group[6601][8]" value="1" class="av-checkbox">
+
+          <div class="input-group">
+            <input type="text" class="form-control" name="EMAIL" placeholder="email">
             <span class="input-group-btn">
-              <button class="btn btn-primary" type="button"><i class="fa fa-arrow-right"></i></button>
+              <button class="btn btn-primary" type="submit"><i class="fa fa-arrow-right"></i></button>
             </span>
-            </div><!-- /input-group -->
-          </form>
-
+          </div><!-- /input-group -->
         </form>
 
       </div>
