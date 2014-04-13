@@ -2,11 +2,7 @@
 
 <div class="content container-fluid" id="front-page">
   <div class="row">
-
-
-
-      <?php
-
+  <?php
       $args = array(
         'order'=> 'ASC',
         'post_parent' => $post->ID,
@@ -32,7 +28,7 @@
 
         }
         ?>
-        <div class="sub_page_container" id="spage_<?php echo $page->ID; ?>" <?php echo $style ?>>
+        <div class="sub_page_container"  id="spage_<?php echo $page->ID; ?>" <?php echo $style ?>>
 
 
           <div class="sub_page_content">
