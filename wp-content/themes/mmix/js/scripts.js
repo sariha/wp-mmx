@@ -31,8 +31,18 @@ jQuery(document).ready(function($) {
         }, time);
     }
 
-    $('#main-nav a').live('click', function(){
-        scrollToElement($(this).attr('href'));
+    $('#main-nav a').live('click', function(e){
+        var url = $(this).attr('href');
+        var hash = url.substring(url.indexOf('#'));
+
+        if($(hash).length != 0)
+        {
+            scrollToElement(hash);
+            window.location.hash = hash;
+            e.preventDefault();
+        }
+
+
     })
 
 });

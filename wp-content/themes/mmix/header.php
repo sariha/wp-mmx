@@ -42,11 +42,13 @@
         'post_parent' => get_option('page_on_front'),
         'post_type' => 'page'
       );
-      $sub_pages = get_children($args); $i=0;?>
+      $sub_pages = get_children($args); $i=0;
+      $post_url = get_permalink(get_option('page_on_front'));
+      ?>
       <ul class="nav navbar-nav" id="main-nav-bar">
         <?php foreach($sub_pages as $page): ?>
           <li class="">
-            <a href="#spage_<?php echo $page->ID; ?>"><?php echo $page->post_title; ?></a>
+            <a href="<?php echo $post_url; ?>#spage_<?php echo $page->ID; ?>"><?php echo $page->post_title; ?></a>
           </li>
         <?php endforeach; ?>
       </ul>
