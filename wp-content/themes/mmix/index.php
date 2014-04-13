@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content container">
+<div class="content container index">
   <div class="row">
     <div class="col-md-8">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

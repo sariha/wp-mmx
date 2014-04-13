@@ -505,7 +505,8 @@ class umSupportArray {
                     'please_wait'=> __( 'Please Wait...', $userMeta->name ),
                 ),
                 'fileuploader' => array(
-                    'upload'        => __( 'Upload', $userMeta->name ),
+                    'upload'        => __( 'Upload File', $userMeta->name ),
+                    //'upload'        => __( 'Upload', $userMeta->name ),
                     'drop'          => __( 'Drop files here to upload', $userMeta->name ),
                     'cancel'        => __( 'Cancel', $userMeta->name ),
                     'failed'        => __( 'Failed', $userMeta->name ),
