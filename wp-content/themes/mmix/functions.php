@@ -154,7 +154,8 @@ function icl_language_switcher()
   $languages = icl_get_languages('orderby=name');
   foreach($languages as $l){
     $active = ($l['active']==1) ? 'active' : '';
-    $output .= '<a href="'.$l['url'].'" class="btn btn-info btn-xs '.$active.'">'.$l['native_name'].'</a>';
+    $hide = ($l['active']==1) ? 'hide' : '';
+    $output .= '<li class="langSelector '.$hide.'"><a href="'.$l['url'].'" class="'.$active.'">'.$l['language_code'].'</a></li>';
   }
 
   echo $output;
@@ -178,3 +179,19 @@ add_filter('widget_text', 'do_shortcode');
 add_filter('gettext', 'do_shortcode');
 
 /*  */
+
+
+
+/**
+ * custom form user meta
+ */
+
+add_filter( 'user_meta_field_config', 'user_meta_field_config_function', 10, 3 );
+function user_meta_field_config_function( $field, $fieldID, $formName ){
+  if( $fieldID != 'Enter field id that you need to control' )
+    return $field;
+
+  $field['field_class'] = 'form-control';
+
+  return $field;
+}

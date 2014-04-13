@@ -28,6 +28,7 @@
 
         }
         ?>
+        <div class="clearfix"></div>
         <div class="sub_page_container"  id="spage_<?php echo $page->ID; ?>" <?php echo $style ?>>
           <div class="sub_page_content">
             <?php if(!empty($banner)) : ?>

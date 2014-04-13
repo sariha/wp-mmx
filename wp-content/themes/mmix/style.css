@@ -308,7 +308,7 @@ ul.tweet-wrap
 }
 .banner-title
 {
-    display: inline-block;
+
     background-color: #4FA9F5;
     padding: 12px;
     margin-top: -100px;
@@ -383,4 +383,28 @@ div.join-header img
     -webkit-box-shadow: 0 1px 0 #fff;
     -moz-box-shadow: 0 1px 0 #fff;
     box-shadow: 0 1px 0 #fff;
+}
+
+#right-nav li.langSelector a,
+#right-nav li.langSelector a:hover,
+#right-nav li.langSelector a:visited
+{
+    border: solid 1px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    margin: 12px;
+    padding-top: 5px;
+}
+#right-nav
+{
+    padding-right: 25px;
+}
+
+div.um_field_container {
+    clear: both;
+    padding-bottom: 7px;
 }

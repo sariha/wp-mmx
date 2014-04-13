@@ -53,6 +53,10 @@
         <?php endforeach; ?>
       </ul>
 
+      <ul class="nav navbar-nav navbar-right" id="right-nav">
+        <?php icl_language_switcher(); ?>
+      </ul>
+
     </div>
   </div>
 </div>
