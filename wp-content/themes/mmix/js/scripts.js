@@ -13,6 +13,12 @@ jQuery(document).ready(function($) {
     $('.sub_page_container').css('min-height', vh);
     $('.sub_page_content').css('min-height', vh);
 
+
+    //home top center
+    var parentHeight = vh;
+    var childHeight = $('.home-top-content').height();
+    $('.home-top-content').css('padding-top', (parentHeight - childHeight) / 2);
+
     /**
      * Scroll to any element (sariha 2014)
      * @param selector

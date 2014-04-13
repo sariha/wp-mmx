@@ -29,17 +29,23 @@
         }
         ?>
         <div class="sub_page_container"  id="spage_<?php echo $page->ID; ?>" <?php echo $style ?>>
-
-
           <div class="sub_page_content">
             <?php if(!empty($banner)) : ?>
               <?php echo $banner; ?>
               <h2 class="banner-title"><?php echo $page->post_title; ?></h2>
             <?php endif; ?>
-            <?php echo do_shortcode($page->post_content) ?>
             <?php
               $pageTpl = get_page_template_slug( $page->ID );
-              locate_template($pageTpl, true);
+            if(!empty($pageTpl))
+            {
+              //special trick
+              include(locate_template($pageTpl));
+            }
+            else
+            {
+              echo do_shortcode($page->post_content);
+            }
+
             ?>
 
           </div>
