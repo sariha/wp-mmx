@@ -31,11 +31,16 @@
   <div class="container-fluid">
     <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="main-nav">
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a href="/" title="<?php bloginfo('name'); ?>" class="navbar-brand" id="mmix-logo">
           <img src="<?php echo get_template_directory_uri(); ?>/img/logo_museomix_MTL.png" alt="Museomix Montréal"/>
         </a>
       </div>
-
       <?php
       $args = array(
         'order'=> 'ASC',
@@ -45,6 +50,11 @@
       $sub_pages = get_children($args); $i=0;
       $post_url = get_permalink(get_option('page_on_front'));
       ?>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+
       <ul class="nav navbar-nav" id="main-nav-bar">
         <?php foreach($sub_pages as $page): ?>
           <li class="">
@@ -53,9 +63,11 @@
         <?php endforeach; ?>
       </ul>
 
+
       <ul class="nav navbar-nav navbar-right" id="right-nav">
         <?php icl_language_switcher(); ?>
       </ul>
+      </div>
 
     </div>
   </div>
