@@ -1,4 +1,3 @@
-
 <footer id="footer" class="site-footer">
 
   <div class="container">
@@ -25,11 +24,20 @@
             <span class="fa fa-tumblr-square fa-2x"></span> <?php echo __('[fr]édition QC 2013[/fr][en]tumblr QC 2013[/en]'); ?>
           </a>
         </li>
+	<li>
+          <a href="http://museomixmtl.com/orga/">
+            <span class="fa fa-folder-open fa-2x"></span> <?php echo __('[fr]Organisation[/fr][en]Organization[/en]'); ?>
+          </a>
+        </li>
+	<li>
+          <a href="<?php echo __('[fr]http://museomixmtl.com/presse/[/fr][en]http://museomixmtl.com/press/[/en]'); ?>">
+            <span class="fa fa-download fa-2x"></span> <?php echo __('[fr]Presse[/fr][en]Press[/en]'); ?>
+          </a>
+        </li>
       </ul>
-      <div class="clearfix"></div>
     </div>
   </div>
-
+<div class="clearfix"></div>
   <div class="container">
     <div class="site-info center">
       <div id="copyright-text">

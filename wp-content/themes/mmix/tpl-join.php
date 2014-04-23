@@ -6,7 +6,7 @@
 
 <p><br/></p>
 
-<div>
+<div id="cta">
 
   <div class="col-md-4">
     <div class="join-panels">
@@ -16,9 +16,9 @@
       </div>
       <p class="join-text robotoFont">
         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-          Want to know what we’re up to? Join our newsletter
+          Want to know what we’re up to? Join our newsletter:
         <?php else : ?>
-          Vous voulez savoir ou nous en sommes ? Inscrivez-vous à notre infolettre
+          Vous voulez savoir où nous en sommes ? Inscrivez-vous à notre infolettre :
         <?php endif; ?>
       </p>
       <div>
@@ -55,7 +55,7 @@
           up registration !
         <?php else : ?>
           Vous voulez participer ?
-          Recevez une notification quand nous ouvrons les inscription !
+          Recevez une notification quand nous ouvrons les inscriptions !
         <?php endif; ?>
       </p>
       <div>
@@ -91,17 +91,17 @@
       <p class="join-text robotoFont">
 
         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-          Want to join our team of beneLOVEs? write us a few words..
+          Want to join our team of LOVEunteers? write us a few words..
         <?php else : ?>
-         Vous voulez rejoindre notre équipe de beneLOVEs ?
-          écrivez-nous quelques mots...
+         Vous voulez rejoindre notre équipe de bénéLOVEs ?
+          Écrivez-nous quelques mots...
         <?php endif; ?>
 
       </p>
       <div>
         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
           <a href="<?php echo site_url().'/en/contact-us/'; ?>" class="btn btn-primary">
-            Hi there, lovely...
+            ... right this way!
           </a>
         <?php else : ?>
           <a href="<?php echo site_url().'/contactez-nous/'; ?>" class="btn btn-primary">

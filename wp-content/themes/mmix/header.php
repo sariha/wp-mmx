@@ -63,8 +63,10 @@
         <?php endforeach; ?>
       </ul>
 
-
+	
       <ul class="nav navbar-nav navbar-right" id="right-nav">
+	<div class="top-icon"><a href="http://www.facebook.com/museomixMTL"><span class="fa fa-facebook-square fa-2x"></span></a></div>
+	<div class="top-icon"><a href="http://twitter.com/MuseomixMTL"><span class="fa fa-twitter-square fa-2x"></span></a></div>
         <?php icl_language_switcher(); ?>
       </ul>
       </div>
@@ -72,4 +74,3 @@
     </div>
   </div>
 </div>
-

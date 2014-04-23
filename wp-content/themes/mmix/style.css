@@ -68,6 +68,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
     float: right;
 }
 
+ul#main-nav-bar > li:first-child { 
+    display:none; 
+}
 div.dates
 {
     float: right;
@@ -254,8 +257,9 @@ ul.tweet-wrap
 /* footer */
 #footer
 {
-    padding: 15px 0;
+    padding: 65px 0;
     text-align: center;
+    background-color: #FFEC00;
 }
 #footer ul li
 {
@@ -323,6 +327,12 @@ ul.tweet-wrap
     size : 15px;
 }
 
+#cta {
+margin-top : 40px;
+margin-bottom : 40px;
+min-height : 440px;
+}
+
 .join-panels
 {
     -webkit-border-radius: 5px;
@@ -331,7 +341,8 @@ ul.tweet-wrap
 
     background-color: #F2F2F2;
     text-align: center;
-    padding: 10px 25px;
+    padding: 10px 25px 25px;
+    margin-bottom : 25px;
 }
 
 div.join-header
@@ -366,9 +377,9 @@ div.join-header img
 
     background-color: #F2F2F2;
     text-align: center;
-    padding: 10px 25px;
+    padding: 25px 25px;
     min-height: 290px;
-    margin:5px 0;
+    margin:35px 20px;
 }
 .user-panel h3
 {
@@ -405,6 +416,11 @@ div.join-header img
 {
     padding-right: 25px;
 }
+.top-icon {
+    float: right; 
+    padding-top: 15px;
+    padding-left: 10px;
+}
 
 div.um_field_container {
     clear: both;
@@ -424,4 +440,8 @@ div.um_field_container {
 .index h6
 {
     color: #003f81;
+}
+
+#copyright-text {
+padding-top: 25px;
 }
