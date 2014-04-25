@@ -462,3 +462,9 @@ div.um_field_container {
 #copyright-text {
     padding-top: 25px;
 }
+
+@media (max-width: 767px) {
+    h1, .h1 { font-size: 26px; }
+    h2, .h2 { font-size: 20px; }
+    h3, .h3 { font-size: 18px; }
+}
