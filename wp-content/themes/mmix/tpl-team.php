@@ -9,8 +9,8 @@
   <?php
   //set the team you want to show here :
   $groups =  array(
-    'coreTeam' => array('name'=>'Core Team'),
-    'benevole' => array('name'=>'Benevoles'),
+    'coreTeam' => array('name'=>'Coordinateurs'),
+    'benevole' => array('name'=>'BénéLOVEs'),
     'ambassadeur'=> array('name'=>'Ambassadeurs')
   );
   ?>
