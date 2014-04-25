@@ -13,13 +13,7 @@
         $i++; ?>
 
         <?php
-        if($i == 1) {
-          $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($page->ID), 'full' );
-          $url = $thumb['0'];
-          $style= 'style="background: url('.$url.');background-size: cover;background-position: 50% 50%;"';
-        }
-        else
-        {
+        if($i !== 1) {
           $style = '';
           if(has_post_thumbnail($page->ID))
             $banner = get_the_post_thumbnail( $page->ID, 'big-banner');

@@ -306,6 +306,22 @@ ul.tweet-wrap
    padding-top: 0px;
 }
 
+video#bgvid
+{
+
+    position: absolute;
+    right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+
+    background: url("video/poster_video.jpg") no-repeat;
+    background-size: cover;
+}
+.top-page
+{
+    background: url("img/transparent_background_30_black.png") repeat;
+}
+
 .sub_page_content
 {
     /* padding-top: 25%; */
@@ -443,5 +459,5 @@ div.um_field_container {
 }
 
 #copyright-text {
-padding-top: 25px;
+    padding-top: 25px;
 }

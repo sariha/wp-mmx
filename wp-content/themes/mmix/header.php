@@ -37,7 +37,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="/" title="<?php bloginfo('name'); ?>" class="navbar-brand" id="mmix-logo">
+        <a href="/#website_top" title="<?php bloginfo('name'); ?>" class="navbar-brand" id="mmix-logo">
           <img src="<?php echo get_template_directory_uri(); ?>/img/logo_museomix_MTL.png" alt="Museomix Montréal"/>
         </a>
       </div>
