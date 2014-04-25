@@ -9,7 +9,7 @@
   <?php
   //set the team you want to show here :
   $groups =  array(
-    'coreTeam' => array('name'=>'Core Team'),
+    'coreTeam' => array('name'=> __('[en]Core team[/en][fr]Organisateurs[/fr]')),
     'benevole' => array('name'=>'Benevoles'),
     'ambassadeur'=> array('name'=>'Ambassadeurs')
   );
