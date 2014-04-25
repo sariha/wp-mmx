@@ -316,6 +316,7 @@ video#bgvid
 
     background: url("video/poster_video.jpg") no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
 }
 .top-page
 {
