@@ -29,7 +29,7 @@ function mmix_partners() {
     'label'               => __( 'mmix_partner', 'mmix' ),
     'description'         => __( 'Team partners for museomix', 'mmix' ),
     'labels'              => $labels,
-    'supports'            => array( 'title', 'editor', 'thumbnail', ),
+    'supports'            => array( 'title', 'editor', 'thumbnail','excerpt' ),
     'hierarchical'        => false,
     'public'              => true,
     'show_ui'             => true,

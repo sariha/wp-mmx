@@ -470,7 +470,8 @@ div.um_field_container {
     padding-top: 25px;
 }
 
-.author img
+.author img,
+.partner-logo img
 {
     max-width: 100%;
     height: auto;
