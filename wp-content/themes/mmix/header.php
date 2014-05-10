@@ -63,6 +63,19 @@
         <?php endforeach; ?>
       </ul>
 
+        <?php
+        wp_nav_menu( array(
+            'menu'              => 'primary',
+            'theme_location'    => 'primary',
+            'depth'             => 2,
+            'container'         => '',
+            'container_class'   => 'collapse navbar-collapse navbar-ex1-collapse',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'walker'            => new wp_bootstrap_navwalker())
+        );
+        ?>
+
 	
       <ul class="nav navbar-nav navbar-right" id="right-nav">
 	<div class="top-icon"><a href="http://www.facebook.com/museomixMTL"><span class="fa fa-facebook-square fa-2x"></span></a></div>
