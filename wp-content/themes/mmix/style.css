@@ -444,7 +444,8 @@ div.um_field_container {
     padding-bottom: 7px;
 }
 
-.content.index
+.content.index,
+.content.home
 {
     padding-top: 80px;
 }
@@ -454,13 +455,25 @@ div.um_field_container {
 .index h3,
 .index h4,
 .index h5,
-.index h6
+.index h6,
+.home h1,
+.home h2,
+.home h3,
+.home h4,
+.home h5,
+.home h6
 {
     color: #003f81;
 }
 
 #copyright-text {
     padding-top: 25px;
+}
+
+.author img
+{
+    max-width: 100%;
+    height: auto;
 }
 
 @media (max-width: 767px) {
