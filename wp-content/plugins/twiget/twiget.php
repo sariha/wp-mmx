@@ -110,11 +110,11 @@ function twiget_localize_scripts(){
 		'via'			=> sprintf( __( 'via %s', 'twiget' ), 'twigetTweetClient' ),
 		'LessThanMin'  	=> __( 'il y\'a moins d\'une minute', 'twiget' ),
 		'AboutAMin'  	=> __( 'il y\'a environ une minute', 'twiget' ),
-		'MinutesAgo'  	=> sprintf( __( 'il y\'a %s minutes', 'twiget' ), 'twigetRelTime' ),
+		'MinutesAgo'  	=> sprintf( __( 'il y a %s minutes', 'twiget' ), 'twigetRelTime' ),
 		'AnHourAgo'  	=> __( 'il y\'a environ une heure', 'twiget' ),
-		'HoursAgo'  	=> sprintf( __( 'il y\'a environ %s heures', 'twiget' ), 'twigetRelTime' ),
+		'HoursAgo'  	=> sprintf( __( 'il y a environ %s heures', 'twiget' ), 'twigetRelTime' ),
 		'OneDayAgo'  	=> __( 'il y\'a un jour', 'twiget' ),
-		'DaysAgo'  		=> sprintf( __( 'il y\'a %s jours', 'twiget' ), 'twigetRelTime' ),
+		'DaysAgo'  		=> sprintf( __( 'il y a %s jours', 'twiget' ), 'twigetRelTime' ),
 		'isSSL'			=> is_ssl(),
 	);
    wp_localize_script( 'twiget-widget-js', 'TwigetArgs', $twiget_args );
