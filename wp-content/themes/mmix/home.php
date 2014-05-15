@@ -33,7 +33,9 @@
                 <div class="col-md-12">
                   <p style="margin: 5px auto">
                     <!-- AddThis Button BEGIN -->
-                  <div class="addthis_toolbox addthis_default_style addthis_16x16_style">
+                  <div class="addthis_toolbox addthis_default_style addthis_16x16_style"
+                       addthis:url="<?php the_permalink() ?>"
+                       addthis:title="<?php the_title() ?>">
                     <a class="addthis_button_facebook"></a>
                     <a class="addthis_button_twitter"></a>
                     <a class="addthis_button_google_plusone_share"></a>
