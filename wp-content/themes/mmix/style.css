@@ -398,10 +398,7 @@ div.join-header img
     min-height: 290px;
     margin:35px 20px;
 }
-.user-panel h3
-{
-    color: #4FA9F5;
-}
+
 
 .user-avatar img
 {
@@ -445,25 +442,38 @@ div.um_field_container {
 }
 
 .content.index,
-.content.home
+.content.home,
+#single-post
 {
     padding-top: 80px;
 }
 
-.index h1,
-.index h2,
-.index h3,
-.index h4,
-.index h5,
-.index h6,
-.home h1,
-.home h2,
-.home h3,
-.home h4,
-.home h5,
-.home h6
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
 {
     color: #003f81;
+}
+
+#front-page h1,
+#front-page h2,
+#front-page h3,
+#front-page h4,
+#front-page h5,
+#front-page h6
+{
+    color: #ffffff;
+}
+
+#front-page .user-panel h3
+{
+    color: #4FA9F5;
 }
 
 #copyright-text {
