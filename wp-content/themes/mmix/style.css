@@ -138,6 +138,44 @@ h1 small
     text-align: center;
 }
 
+/* carousel */ 
+html, body {
+height:100%;
+margin:0;
+padding:0;
+}
+.carousel, .item, .active {
+height:100%;
+}
+.carousel-inner {
+height:100%;
+}
+.carousel {
+margin-bottom: 60px;
+}
+.carousel-caption {
+z-index: 10;
+}
+.carousel .item {
+background-color: #777;
+}
+.carousel .carousel-inner .bg {
+background-repeat:no-repeat;
+background-size:cover;
+}
+.carousel .carousel-inner .slide1 {
+background-image:url(http://museomixmtl.com/wp-content/uploads/2014/05/pentagons.jpg);
+background-position: center top;
+}
+.carousel .carousel-inner .slide2 {
+background-image:url(http://museomixmtl.com/wp-content/uploads/2014/05/pentagons.jpg);
+background-position: center center;
+}
+.carousel .carousel-inner .slide3 {
+background-image:url(http://museomixmtl.com/wp-content/uploads/2014/05/pentagons.jpg);
+background-position: center bottom;
+}
+
 /* gallery */
 div.gallery
 {
