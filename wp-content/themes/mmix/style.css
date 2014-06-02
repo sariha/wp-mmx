@@ -170,10 +170,10 @@ height:100%;
     padding-right: 20px;
 }
 
-#carousel-about h1,
-#carousel-about h2,
-#carousel-about h3,
-#carousel-about h4
+#front-page #carousel-about h1,
+#front-page #carousel-about h2,
+#front-page #carousel-about h3,
+#front-page #carousel-about h4
 {
     color: #000;
 }
