@@ -12,6 +12,7 @@ jQuery(document).ready(function($) {
     var vh = $( window ).height();
     $('.sub_page_container').css('min-height', vh);
     $('.sub_page_content').css('min-height', vh);
+    $('.height100').css('min-height', vh);
 
 
     //home top center
@@ -47,8 +48,20 @@ jQuery(document).ready(function($) {
             window.location.hash = hash;
             e.preventDefault();
         }
+    });
 
+    function middle()
+    {
 
-    })
+        $('.middle').each(function(){
+            var height = $(this).height();
+            $(this)
+                .css('bottom', 'auto')
+                .css('top', '50%')
+                .css('margin-top', '-' + (height/2) + 'px');
 
+        });
+    }
+
+    middle();
 });
