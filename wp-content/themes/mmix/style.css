@@ -168,7 +168,14 @@ height:100%;
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
+}
 
+.carousel-caption.middle h1,
+.carousel-caption.middle h2,
+.carousel-caption.middle h3,
+.carousel-caption.middle h4,
+{
+    color: #000;
 }
 
 
