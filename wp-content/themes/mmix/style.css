@@ -170,10 +170,10 @@ height:100%;
     padding-right: 20px;
 }
 
-.carousel-caption.middle h1,
-.carousel-caption.middle h2,
-.carousel-caption.middle h3,
-.carousel-caption.middle h4,
+#carousel-about h1,
+#carousel-about h2,
+#carousel-about h3,
+#carousel-about h4,
 {
     color: #000;
 }
