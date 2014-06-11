@@ -104,7 +104,7 @@
             ... right this way!
           </a>
         <?php else : ?>
-          <a href="<?php echo site_url().'/contactez-nous/'; ?>" class="btn btn-primary">
+          <a href="<?php echo site_url().'/home/join/beneloves/'; ?>" class="btn btn-primary">
             ... par ici !
           </a>
         <?php endif; ?>

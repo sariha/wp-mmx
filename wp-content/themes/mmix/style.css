@@ -138,6 +138,68 @@ h1 small
     text-align: center;
 }
 
+/* plan de commandite */
+.command {
+background-color:#ECECEC;
+border-radius: 8px; 
+color: white;
+margin-bottom: 12px;
+}
+.command:hover { 
+-moz-box-shadow: 0 0 10px #ccc; 
+-webkit-box-shadow: 0 0 10px #ccc; 
+box-shadow: 0 0 10px #ccc; 
+} 
+.com-cont {
+padding-left: 6px;
+padding-right: 6px;
+}
+.com-title-cont {
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+border-bottom: solid 2px #fff;
+height: 40px;
+}
+.com-icon {
+width : 30px;
+padding : 5px;
+display: inline-block;
+vertical-align: bottom;
+}
+.com-title {
+display: inline-block;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 18px;
+padding-top: 5px;
+}
+.com-price {
+float:right;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 18px;
+padding-top: 5px;
+padding-right: 8px;
+}
+.com-desc {
+font-size:18px;
+color: #1C1C1B;
+display: inline-block; 
+padding-top: 10px;
+}
+.exclu {
+font-style:italic; 
+padding-left: 15px;
+color: #1C1C1B;
+padding-bottom: 5px;
+position: relative;
+top: -7px;
+}
+.go {
+float: right;
+position: relative;
+top: -22px;
+left: -8px;
+}
+
 /* carousel */
 
 .carousel, .item, .active {
