@@ -232,6 +232,11 @@ height:100%;
     padding-right: 20px;
 }
 
+.carousel-caption
+{
+    bottom: 80px;
+}
+
 #front-page #carousel-about h1,
 #front-page #carousel-about h2,
 #front-page #carousel-about h3,

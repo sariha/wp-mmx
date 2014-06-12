@@ -50,18 +50,8 @@ jQuery(document).ready(function($) {
         }
     });
 
-    function middle()
-    {
 
-        $('.middle').each(function(){
-            var height = $(this).height();
-            $(this)
-                .css('bottom', 'auto')
-                .css('top', '50%')
-                .css('margin-top', '-' + (height/2) + 'px');
 
-        });
-    }
 
-    middle();
+
 });
