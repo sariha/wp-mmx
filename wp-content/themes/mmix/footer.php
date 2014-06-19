@@ -35,7 +35,7 @@
           </a>
         </li>
 	<li>
-          <a href="<?php echo __('[fr]http://museomixmtl.org/[/fr][en]http://museomixmtl.org/[/en]'); ?>">
+          <a href="<?php echo __('[fr]http://museomix.org/[/fr][en]http://museomix.org/en[/en]'); ?>">
             <span class="fa fa-external-link-square fa-2x"></span> <?php echo __('[fr]Site international[/fr][en]International site[/en]'); ?>
           </a>
         </li>
