@@ -3,6 +3,7 @@
 require_once('inc/wp_bootstrap_navwalker.php');
 require_once('inc/gallery-shortcode.php');
 require_once('inc/partner.php');
+require_once('inc/faq.php');
 
 //loads settings (not plugged yet..)
 //require_once('inc/settings/admin-init.php');
