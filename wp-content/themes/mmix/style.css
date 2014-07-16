@@ -493,19 +493,19 @@ div.join-header img
     min-height: 120px;
 }
 
-
 .user-panel
 {
     text-align: center;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-
-    background-color: #F2F2F2;
+    background-color: #FFF;
     text-align: center;
-    padding: 25px 25px;
-    min-height: 312px;
-    margin:35px 20px;
+
+    padding: 25px 0px;
+    min-height: 300px;
+    margin:35px 0px;
+    border: solid 1px #EEE;
 }
 
 
