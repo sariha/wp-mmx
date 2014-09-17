@@ -14,17 +14,7 @@
             <span class="fa fa-twitter-square fa-2x"></span> @MuseomixMTL
           </a>
         </li>
-        <li>
-          <a href="https://groups.google.com/forum/#!forum/museomixmtl">
-            <span class="fa fa-group fa-2x"></span> google group
-          </a>
-        </li>
-        <li>
-          <a href="http://museoquoi.tumblr.com/">
-            <span class="fa fa-tumblr-square fa-2x"></span> <?php echo __('[fr]édition QC 2013[/fr][en]tumblr QC 2013[/en]'); ?>
-          </a>
-        </li>
-	<li>
+        	<li>
           <a href="http://museomixmtl.com/orga/">
             <span class="fa fa-folder-open fa-2x"></span> <?php echo __('[fr]Organisation[/fr][en]Organization[/en]'); ?>
           </a>
@@ -37,6 +27,11 @@
 	<li>
           <a href="<?php echo __('[fr]http://museomix.org/[/fr][en]http://museomix.org/en[/en]'); ?>">
             <span class="fa fa-external-link-square fa-2x"></span> <?php echo __('[fr]Site international[/fr][en]International site[/en]'); ?>
+          </a>
+        </li>
+<li>
+          <a href="http://museomixmtl.com/faq/">
+            <span class="fa fa-group fa-2x"></span> <?php echo __('[fr]FAQ[/fr][en]FAQ[/en]'); ?>
           </a>
         </li>
       </ul>

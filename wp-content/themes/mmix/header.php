@@ -10,9 +10,12 @@
 <!--<![endif]-->
 <head>
   <link rel="icon" href="/favicon.ico" />
+  <link rel="image_src" href="http://museomixmtl.com/wp-content/uploads/2014/06/pastlle-jaune1.png"/>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width">
   <title><?php bloginfo('name'); ?> - <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
+  <meta property="og:image" content="http://museomixmtl.com/wp-content/uploads/2014/06/pastlle-jaune1.png"/>
+  <meta property="og:image:secure_url" content="http://museomixmtl.com/wp-content/uploads/2014/06/pastlle-jaune1.png" />
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <!--[if lt IE 9]>

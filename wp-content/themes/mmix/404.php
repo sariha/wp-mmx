@@ -6,7 +6,7 @@
     <div class="jumbotron">
       <h1>404 !</h1>
       <p>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/nope.gif" alt=""/>
+        <iframe src="//giphy.com/embed/Nrzs481LzLEdy" width="500" height="212" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
       </p>
       <p><a class="btn btn-primary btn-lg" role="button" href="/">Home</a></p>
     </div>

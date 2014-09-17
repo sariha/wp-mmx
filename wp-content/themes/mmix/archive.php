@@ -6,7 +6,7 @@
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <div class="post" id="post-<?php the_ID(); ?>">
             <?php edit_post_link('<span class="glyphicon glyphicon-pencil"></span>','<span style="float: right">', '</span>'); ?>
-            <h2><?php the_title(); ?></h2>
+            <h2><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
             <?php if ( has_post_thumbnail() ): ?>
               <div style="float: left;">
@@ -16,7 +16,7 @@
             <?php endif; ?>
 
             <div class="entry">
-              <?php the_content('<span class="fa fa-arrow-circle-right fa-3x"></span>'); ?>
+	            <?php the_content('<span class="fa fa-arrow-circle-right fa-3x"></span>'); ?>
             </div>
 
           </div>

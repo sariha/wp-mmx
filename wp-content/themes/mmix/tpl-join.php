@@ -51,20 +51,20 @@
       <p class="join-text robotoFont">
         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
           Want to participate?</br>
-          Registration is now open!
+          The 2nd call for participants is on! 
         <?php else : ?>
           Vous voulez participer ?</br>
-          Les inscriptions sont maintenant ouvertes !
+          Répondez à notre appel à participants :
         <?php endif; ?>
       </p>
             <div>
         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-          <a href="<?php echo site_url().'/en/application-form-2014/'; ?>" class="btn btn-primary">
-            Join!
+          <a href="<?php echo site_url().'/en/second-call-for-participants/'; ?>" class="btn btn-primary">
+            Join 
           </a>
         <?php else : ?>
-          <a href="<?php echo site_url().'/formulaire-de-candidature-2014/'; ?>" class="btn btn-primary">
-            Participer !
+          <a href="<?php echo site_url().'/deuxieme-appel-a-participants/'; ?>" class="btn btn-primary">
+            Rejoindre
           </a>
         <?php endif; ?>
 
