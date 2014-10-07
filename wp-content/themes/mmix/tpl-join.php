@@ -50,21 +50,20 @@
       </div>
       <p class="join-text robotoFont">
         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-          Want to participate?</br>
-          The 2nd call for participants is on! 
+          Wanna see us in November?</br> Click here to know more! 
         <?php else : ?>
-          Vous voulez participer ?</br>
-          Répondez à notre appel à participants :
+          Vous voulez nous retrouver en Novembre ?</br>
+          Cliquez ici pour en savoir plus !
         <?php endif; ?>
       </p>
             <div>
         <?php if(ICL_LANGUAGE_CODE == 'en'): ?>
-          <a href="<?php echo site_url().'/en/second-call-for-participants/'; ?>" class="btn btn-primary">
-            Join 
+          <a href="<?php echo site_url().'/en/3-days-to-remix-the-museum/'; ?>" class="btn btn-primary">
+            Go
           </a>
         <?php else : ?>
-          <a href="<?php echo site_url().'/deuxieme-appel-a-participants/'; ?>" class="btn btn-primary">
-            Rejoindre
+          <a href="<?php echo site_url().'/3-jours-pour-remixer-le-musee/'; ?>" class="btn btn-primary">
+            Hop
           </a>
         <?php endif; ?>
 
