@@ -1,9 +1,9 @@
 === Flamingo ===
 Contributors: takayukister, megumithemes
 Tags: bird, contact, mail, crm
-Requires at least: 3.6
-Tested up to: 3.9.1
-Stable tag: 1.1.1
+Requires at least: 3.9
+Tested up to: 4.0
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,25 +17,26 @@ Flamingo is a WordPress plugin created to be a total CRM package. With this vers
 
 * Albanian (sq) - Flor Perzefi
 * Arabic (ar) - Jeremy Varnham
-* Brazilian Portuguese (pt_BR) - [Ilton Alberto Junior](https://twitter.com/iltonalberto)
-* Chinese, Simplified (zh_CN) - [ninghao](http://ninghao.net/)
+* Brazilian Portuguese (pt_BR) - Ilton Alberto Junior
+* Chinese, Simplified (zh_CN) - ninghao
 * Croatian (hr) - Stjepan Tafra
-* Dutch (nl_NL) - [TenSheep](http://tensheep.nl/)
-* French (fr_FR) - [Benjamin Cousin](http://www.bewod.com/)
+* Dutch (nl_NL) - TenSheep
+* French (fr_FR) - Benjamin Cousin
 * German (de_DE) - Christian Becker-Kapraun
-* Hebrew (he_IL) - [Dan Stramer](http://www.dmdesign.co.il/)
+* Hebrew (he_IL) - Dan Stramer
 * Hungarian (hu_HU) - Rózsahegyi Péter
 * Italian (it_IT) - Rosario Capparelli
-* Japanese (ja) - [Takayuki Miyoshi](http://ideasilo.wordpress.com)
+* Japanese (ja) - Takayuki Miyoshi
 * Persian (Farsi; fa_IR) - Morteza Rahmani
-* Portuguese (pt_PT) - [BAANNNG](http://baannng.com)
-* Romanian (ro_RO) - [Inbox Translation](http://inboxtranslation.com/)
-* Russian (ru_RU) - [Pavel](http://wlstyling.crimea.ua/)
+* Portuguese (pt_PT) - BAANNNG
+* Romanian (ro_RO) - Inbox Translation
+* Russian (ru_RU) - Pavel
 * Slovak (sk_SK) - Branco Radenovich
-* Spanish (es_ES) - [Israel Ortuño](http://expander.es/)
-* Thai (th) - [TG Knowledge](http://www.เกร็ดความรู้.com/)
+* Spanish (es_ES) - Israel Ortuño
+* Swedish (sv_SE) - Erik Gripestam Nord
+* Thai (th) - TG Knowledge
 * Turkish (tr_TR) - Ömür YANIKOĞLU
-* Vietnamese (vi_VN) - [ICA Design](http://www.icadesign.vn/)
+* Vietnamese (vi_VN) - ICA Design
 
 If you have created your own language pack, or have an update of an existing one, you can send [gettext PO and MO files](http://codex.wordpress.org/Translating_WordPress) to [me](http://ideasilo.wordpress.com/about/) so that I can bundle it into Flamingo. You can download the latest [POT file](http://plugins.svn.wordpress.org/flamingo/trunk/languages/flamingo.pot).
 
@@ -50,6 +51,12 @@ If you have created your own language pack, or have an update of an existing one
 
 == Changelog ==
 
+= 1.2 =
+
+* Tested up to WordPress 4.0.
+* Requires WordPress 3.9 or higher.
+* Translation for Swedish has been created.
+
 = 1.1.1 =
 
 * Fix: misuse of functions that Akismet 3.0 has marked deprecated.
@@ -60,12 +67,6 @@ If you have created your own language pack, or have an update of an existing one
 
 * Support CSV export for inbound messages.
 * Translations for Croatian, Portuguese and Albanian have been created.
-
-= 1.0.6 =
-
-* Some admin UI have been modified to fit with WordPress 3.8 admin design.
-* Translations for Arabic, Romanian, Persian and Russian have been created.
-* This version requires WordPress 3.6 or higher.
 
 == Upgrade Notice ==
 
