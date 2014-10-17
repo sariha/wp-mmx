@@ -1,6 +1,4 @@
 <?php
-error_reporting(0);
-
  
  class UniteBaseAdminClassRev extends UniteBaseClassRev{
  	
@@ -456,7 +454,7 @@ error_reporting(0);
 					$arrNotDeleted = UniteFunctionsRev::deleteDir($pathUpdate,false);
 					if(!empty($arrNotDeleted)){
 						$strNotDeleted = print_r($arrNotDeleted,true);
-						UniteFunctionsRev::throwError("Plugin directory not writable");
+						UniteFunctionsRev::throwError("Could not delete those files from the update folder: $strNotDeleted");
 					}
 				}
 				
