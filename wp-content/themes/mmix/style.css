@@ -403,6 +403,7 @@ ul.tweet-wrap
 #main-nav
 {
     background: url("img/transparent_background_80_white.png") repeat;
+    -webkit-backface-visibility: hidden;
 }
 #mmix-logo
 {
