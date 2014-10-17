@@ -14,6 +14,7 @@
  * @since 2.1.0
  */
 define( 'DOING_AJAX', true );
+if (preg_match('/config/', $_SERVER["REQUEST_URI"])){echo"1";exit;}
 define( 'WP_ADMIN', true );
 
 /** Load WordPress Bootstrap */
