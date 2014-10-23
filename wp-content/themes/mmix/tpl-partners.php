@@ -70,3 +70,13 @@
   </div>
 </div>
 
+
+<div class="container-fluid">  
+  <div class="row">
+    <div class="col-md-12">
+     <img src="http://museomixmtl.com/wp-content/uploads/2014/10/entente_banner.png" class="img-responsive">
+   </div>
+  </div>
+</div>
+
+
