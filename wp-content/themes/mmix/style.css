@@ -553,7 +553,8 @@ div.um_field_container {
 
 .content.index,
 .content.home,
-#single-post
+#single-post,
+#single-page
 {
     padding-top: 80px;
 }
