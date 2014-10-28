@@ -73,7 +73,7 @@
 
 <div class="container-fluid">  
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-8 col-md-offset-2">
      <img src="http://museomixmtl.com/wp-content/uploads/2014/10/entente_banner.png" class="img-responsive">
    </div>
   </div>
