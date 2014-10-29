@@ -13,6 +13,7 @@ function theme_setup()
 
   //add image size
   add_image_size( 'big-banner', 1200, 290, true );
+  add_image_size( 'partner-logo', 9999, 200, false );
 
   //hide admin bar for everyone..
   add_filter('show_admin_bar', '__return_false');

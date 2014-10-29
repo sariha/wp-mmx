@@ -37,18 +37,21 @@
                   'field' => 'term_id',
                   'terms' => $group->term_id)
               ),
-              'post_status'      => 'publish'
+              'post_status' => 'publish'
             );
             $partners = get_posts($args);
 
-            foreach($partners as $partner): ?>
-              <div class="col-md-2">
+            foreach($partners as $partner):
+              //is large logo ?
+              $larger = get_field('large_display', $partner->ID);
+              ?>
+              <div class="<?php echo ($larger === true) ? 'col-md-4' : 'col-md-2'; ?>">
                 <div class="panel panel-default partners">
                   <div class="panel-body text-center">
                   <span class="partner-logo">
                     <?php if(!empty($partner->post_excerpt)): ?>
                     <a href="<?php echo $partner->post_excerpt; ?>" target="_blank"><?php endif ?>
-                    <?php echo get_the_post_thumbnail($partner->ID); ?>
+                    <?php echo get_the_post_thumbnail($partner->ID, 'partner-logo'); ?>
                     <?php if(!empty($partner->post_excerpt)): ?></a><?php endif ?>
                   </span>
                   </div>
@@ -70,7 +73,7 @@
   </div>
 </div>
 
-
+<!---
 <div class="container-fluid">  
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
@@ -78,5 +81,5 @@
    </div>
   </div>
 </div>
-
+--->
 
