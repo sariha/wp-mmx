@@ -105,3 +105,42 @@ function team_group() {
 
 // Hook into the 'init' action
 add_action( 'init', 'team_group', 0 );
+
+
+
+/* custom fields */
+if(function_exists("register_field_group"))
+{
+  register_field_group(array (
+      'id' => 'acf_partners',
+      'title' => 'partners',
+      'fields' => array (
+          array (
+              'key' => 'field_545033a9c7e0a',
+              'label' => 'large display',
+              'name' => 'large_display',
+              'type' => 'true_false',
+              'message' => 'set this partner in large display',
+              'default_value' => 0,
+          ),
+      ),
+      'location' => array (
+          array (
+              array (
+                  'param' => 'post_type',
+                  'operator' => '==',
+                  'value' => 'partner',
+                  'order_no' => 0,
+                  'group_no' => 0,
+              ),
+          ),
+      ),
+      'options' => array (
+          'position' => 'normal',
+          'layout' => 'no_box',
+          'hide_on_screen' => array (
+          ),
+      ),
+      'menu_order' => 0,
+  ));
+}
