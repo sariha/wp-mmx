@@ -554,7 +554,8 @@ div.um_field_container {
 .content.index,
 .content.home,
 #single-post,
-#single-page
+#single-page,
+.container.archive
 {
     padding-top: 80px;
 }

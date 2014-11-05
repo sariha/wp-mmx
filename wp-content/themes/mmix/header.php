@@ -44,9 +44,11 @@
           <img src="<?php echo get_template_directory_uri(); ?>/img/museomix_2014.png" alt="Museomix Montréal"/>
         </a>
       </div>
+
       <?php
       $args = array(
         'order'=> 'ASC',
+        'orderby' => 'menu_order',
         'post_parent' => get_option('page_on_front'),
         'post_type' => 'page'
       );

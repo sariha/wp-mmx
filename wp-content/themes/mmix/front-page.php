@@ -5,6 +5,7 @@
   <?php
       $args = array(
         'order'=> 'ASC',
+        'orderby' => 'menu_order',
         'post_parent' => $post->ID,
         'post_type' => 'page'
       );

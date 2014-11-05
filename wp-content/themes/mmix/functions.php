@@ -256,3 +256,13 @@ function replace_reply_link_class($class){
     $class = str_replace("class='comment-reply-link", "class='comment-reply-link btn btn-primary btn-xs", $class);
     return $class;
 }
+
+
+//exclude category "postes"
+function exclude_category_home( $query ) {
+    if ( $query->is_home ) {
+        $query->set( 'cat', '-56, -100' );
+    }
+    return $query;
+}
+add_filter( 'pre_get_posts', 'exclude_category_home' );
