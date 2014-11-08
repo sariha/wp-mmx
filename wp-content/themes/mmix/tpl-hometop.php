@@ -11,5 +11,9 @@
   </video>
   <div class="home-top-content">
     <?php echo $page->post_content; ?>
+
+
+
+
   </div>
 </div>
