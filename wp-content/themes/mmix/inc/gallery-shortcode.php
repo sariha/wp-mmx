@@ -66,7 +66,7 @@ function gallery_shortcode_sc($attr) {
     'icontag'    => 'div',
     'captiontag' => 'div',
     'columns'    => 3,
-    'size'       => 'thumb-gallery',
+    'size'       => 'thumbnail',
     'include'    => '',
     'exclude'    => '',
     'link'       => ''
