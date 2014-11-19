@@ -19,7 +19,7 @@
   global $post;
   if(isset($post->ID) && !empty($post->ID))
   {
-    $featuredImage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large')
+    $featuredImage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
     $featuredImage = $featuredImage[0];
   }
    ?>
