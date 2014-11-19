@@ -10,12 +10,23 @@
 <!--<![endif]-->
 <head>
   <link rel="icon" href="/favicon.ico" />
-  <link rel="image_src" href="http://museomixmtl.com/wp-content/uploads/2014/06/pastlle-jaune1.png"/>
+
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width">
   <title><?php bloginfo('name'); ?> - <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
-  <meta property="og:image" content="http://museomixmtl.com/wp-content/uploads/2014/06/pastlle-jaune1.png"/>
-  <meta property="og:image:secure_url" content="http://museomixmtl.com/wp-content/uploads/2014/06/pastlle-jaune1.png" />
+
+  <?php
+  global $post;
+  if(isset($post->ID) && !empty($post->ID))
+  {
+    $featuredImage = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large')
+    $featuredImage = $featuredImage[0];
+  }
+   ?>
+  <meta property="og:image" content="<?php echo (isset($featuredImage) && !empty($featuredImage)) ? $featuredImage : 'http://museomixmtl.com/wp-content/uploads/2014/06/pastlle-jaune1.png'; ?>"/>
+  <link rel="image_src" href="<?php echo (isset($featuredImage) && !empty($featuredImage)) ? $featuredImage : 'http://museomixmtl.com/wp-content/uploads/2014/06/pastlle-jaune1.png'; ?>"/>
+
+
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <!--[if lt IE 9]>
